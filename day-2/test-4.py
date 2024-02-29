@@ -1,4 +1,4 @@
-input_speed = int(input("Enter Car speed in KM/h: "))
+input_speed = float(input("Enter Car speed in KM/h: "))
 if 30 < input_speed <= 60:
     print("Your car is Moderate")
 elif 60 <= input_speed <= 120:
