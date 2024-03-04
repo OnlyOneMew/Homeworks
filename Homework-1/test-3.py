@@ -6,5 +6,5 @@ s = (a + b + c) / 2
 area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
 perimeter = a + b + c
 
-print("triangle area is: ", area)
-print("triangle perimeter is: ", perimeter)
+print("Triangle area is: ", area)
+print("Triangle perimeter is: ", perimeter)
