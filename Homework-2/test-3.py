@@ -5,7 +5,7 @@ if 1 < input_number <= 10:
     for i in range(2, input_number + 1):
         if input_number % i == 0:
             is_prime = True
-            for j in range(2, int(i**0.5) + 1):
+            for j in range(2, int(i ** 0.5) + 1):
                 if i % j == 0:
                     is_prime = False
                     break
