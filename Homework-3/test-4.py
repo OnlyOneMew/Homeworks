@@ -7,7 +7,6 @@ day = int(input("Enter the day you bought the bitcoin: "))
 paid_usd = float(input("Enter the amount paid for Bitcoin (USD$): "))
 
 bought_date = datetime(year, month, day)
-today = datetime.now().date()
 
 btc = BtcConverter()
 bought_price = btc.get_previous_price("USD", bought_date)
