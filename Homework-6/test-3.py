@@ -7,7 +7,7 @@ attempt = 0
 
 while attempt < MAX_ATTEMPT:
     user_input = int(input("Guess the number from 0 to 100: "))
-    if user_input > 100:
+    if user_input < 0 or user_input > 100:
         print("Please enter number up to 100")
         continue
     print(f"Attempt {attempt + 1} / {MAX_ATTEMPT}")
