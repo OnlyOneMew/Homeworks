@@ -14,10 +14,17 @@ while n > 0:
 
 n = original_num
 sum_nums = 0
+
 while n > 0:
     sum_nums += n % 10
     n = n // 10
 
+str_num = str(reversed_num)
+zeros = len(str(original_num)) - len(str_num)
+
+if zeros > 0:
+    str_num = ("0" * zeros) + str_num
+
 print(f"Entered number is: {original_num}")
-print(f"Reversed number is: {reversed_num}")
+print(f"Reversed number is: {str_num}")
 print(f"Sum of digits: {sum_nums}")
