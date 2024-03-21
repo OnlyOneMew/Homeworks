@@ -6,17 +6,12 @@ while not (0 <= n < 10000):
 
 original_num = n
 reversed_num = 0
+sum_nums = 0
 
 while n > 0:
     remainder = n % 10
     reversed_num = (reversed_num * 10) + remainder
-    n = n // 10
-
-n = original_num
-sum_nums = 0
-
-while n > 0:
-    sum_nums += n % 10
+    sum_nums += remainder
     n = n // 10
 
 str_num = str(reversed_num)
