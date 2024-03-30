@@ -1,19 +1,13 @@
-def is_valid_str(input_str):
-    return input_str.isalpha()
-
-
 def modify_str(input_str):
-    shifted_str = input_str
-    for _ in range(len(input_str)):
-        shifted_str = shifted_str[-1] + shifted_str[:-1]
-        print(shifted_str)
+    shifted_str = input_str[-1] + input_str[:-1]
+    return shifted_str
 
 
 def main():
     input_str = input("Input string: ").strip()
-    if not is_valid_str(input_str):
-        print("Please enter only alphabets")
-    modify_str(input_str)
+    for _ in range(len(input_str)):
+        input_str = modify_str(input_str)
+        print(input_str)
 
 
 if __name__ == "__main__":
