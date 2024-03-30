@@ -6,11 +6,14 @@ print(second_input)
 
 possible = True
 
+if len(text_input) != len(second_input):
+    possible = False
+
 for char in second_input:
     if char not in text_input:
         possible = False
         break
-    text_input = text_input.replace(char, '', 1)
+
 if possible:
     print("YES")
 else:
